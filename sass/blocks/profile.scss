@@ -1,0 +1,36 @@
+.profile {
+  font-family: 'SF UI Display Light', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.24);
+}
+
+.profile__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 52px;
+  padding-right: 2px;
+  font-family: 'SF UI Display Thin', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 29px;
+  text-align: center;
+}
+
+@media (min-width: $desktop-width) {
+  .profile {
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+  }
+  .profile__title {
+    padding-right: 15px;
+    margin-top: 75px;
+    margin-bottom: 98px;
+    font-size: 42px;
+    line-height: 55px;
+  }
+}
