@@ -1,0 +1,199 @@
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'SF UI Display Light', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 31px;
+  margin: 0;
+  padding: 0;
+  background: #f8f0e9;
+}
+
+.page-header__wrapper {
+  margin: 0 auto;
+  padding-left: 43px;
+  margin-top: 12px;
+}
+
+.page-header__about-us {
+  display: block;
+  margin-top: 12px;
+  margin-right: 8px;
+  width: 40px;
+  height: 40px;
+  background-image: url('../img/about-us-mobile.svg');
+  background-repeat: no-repeat;
+  background-color: transparent;
+  text-indent: -999em;
+  border: none;
+  outline: none;
+  position: relative;
+}
+
+.page-header__navigation {
+  width: auto;
+  background-color: inherit;
+}
+
+.page-header__item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 508px;
+  &--shadow {
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.page-header__item-list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-top: 6.2px;
+  margin-left: 8px;
+  padding-bottom: 26.2px;
+}
+
+.page-header__item-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page-header__navigation-toggle {
+  position: absolute;
+  top: 21px;
+  left: 9px;
+  display: block;
+  width: 30px;
+  height: 22px;
+  background-color: inherit;
+  border: none;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    box-shadow: 0 10px 0 0 #fff, 0 20px 0 0 #fff;
+  }
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    align-items: center;
+    justify-content: center;
+    height: 104px;
+  }
+  .page-header__wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+  .page-header__logo {
+    margin: 0 13px;
+  }
+  .page-header__about-us {
+    order: 2;
+    margin-top: -20px;
+    margin-left: 40px;
+  }
+  .page-header__item {
+    display: flex;
+    padding: 10px 10px;
+    font-size: 18px;
+    order: 1;
+    height: inherit;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    line-height: 36px;
+    height: 104px;
+    background: #f7efe8;
+  }
+  .page-header__logo {
+    margin: 0;
+    padding: 10px 0;
+    margin-left: 80px;
+    text-decoration: none;
+  }
+  .page-header__navigation {
+    margin: 0;
+    padding: 0;
+    width: 55%;
+  }
+  .page-header__item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 35px 0;
+    list-style: none;
+    font-size: 28px;
+  }
+  .page-header__item-list {
+    display: block;
+    padding: 0 22px;
+    &:first-child {
+      font-family: 'SF UI Display Medium', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      padding-right: 30px;
+      padding-left: 66px;
+      color: #fe9300;
+    }
+    &:not(:first-child) {
+      font-family: 'SF UI Display Thin', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      padding-right: 14px;
+    }
+    &:last-child {
+      padding-left: 26px;
+    }
+  }
+  .page-header__item-link {
+    color: inherit;
+    text-decoration: none;
+  }
+  .page-header__about-us {
+    display: inline-block;
+    font-family: 'SF UI Display Medium', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 36px;
+    margin-top: 21px;
+    margin-right: 80px;
+    width: 254px;
+    height: 61px;
+    border-radius: 40px;
+    border: 2px solid #077134;
+    color: #077134;
+    background-color: transparent;
+    text-indent: 0;
+    background-image: none;
+  }
+}
