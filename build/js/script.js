@@ -4,6 +4,12 @@ const openPopup = document.querySelector('.grant__consultation');
 const closePopup = document.querySelector('.pop-up__close');
 const openMenu = document.querySelector('.page-header__navigation-toggle');
 const show = document.querySelector('.page-header__item');
+const stud = document.querySelector('.page-header__item-list');
+const studShow = document.querySelector('.questionnaire');
+stud.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  studShow.classList.add('questionnaire--show');
+});
 if (popUp !== null) {
   closePopup.onclick = function(evt) {
     evt.preventDefault();

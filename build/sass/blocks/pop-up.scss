@@ -15,8 +15,9 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  height: 1027px;
+  height: 100%;
   width: auto;
+  overflow: auto;
 }
 
 .pop-up__position {
@@ -38,7 +39,7 @@
 .pop-up__close {
   display: block;
   position: absolute;
-  top: 35px;
+  top: 9px;
   right: 9px;
   background-color: #fff;
   cursor: pointer;
@@ -141,26 +142,24 @@
 
 .user__label-time[type=time]::-webkit-datetime-edit-text {
   padding: 0 9px;
-  height: 70px;
 }
 
 .user__label-time[type=time]::-webkit-datetime-edit-hour-field {
-  border: 2px solid rgba(255, 181, 0, 0.54);
+  border: 3px solid rgba(255, 181, 0, 0.54);
   border-radius: 4px;
-  padding: 0 33px;
+  padding: 0 36px;
   margin-left: 2px;
-  padding-bottom: 4px;
 }
 
 .user__label-time[type=time]::-webkit-datetime-edit-minute-field {
   background: rgba(255, 181, 0, 0.15);
   border-radius: 4px;
-  padding: 0 32px;
+  padding: 0 40px;
 }
 
 .user__label-time[type=time]::-webkit-calendar-picker-indicator {
   position: absolute;
-  top: 120px;
+  top: 122px;
   right: -3px;
   width: 24px;
   height: 24px;
@@ -206,7 +205,7 @@
 
 .user__label-data::-webkit-calendar-picker-indicator {
   position: absolute;
-  top: 2px;
+  top: 4px;
   right: -3px;
   background-image: url('../img/data.svg');
   background-repeat: no-repeat;
@@ -238,6 +237,9 @@
     border: none;
     background-color: #fff;
     box-shadow: 0 0 14px 10px rgba(0, 0, 0, 0.15);
+    @media (min-width: $desktop-width) {
+      margin-top: 60px;
+    }
   }
   .pop-up__close {
     top: 3px;
